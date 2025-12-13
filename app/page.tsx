@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import WordCounter from "./components/WordCounter";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -47,6 +48,8 @@ export default function Page() {
       {result !== null && (
         <p className="mt-4 text-lg font-medium">Result: {result}</p>
       )}
+
+      <WordCounter />
     </main>
   );
 }
