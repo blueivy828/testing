@@ -9,6 +9,9 @@ import Stopwatch from "./components/Stopwatch";
 import BmiCalculator from "./components/BmiCalculator";
 import TicTacToe from "./components/TicTacToe";
 import ColorConverter from "./components/ColorConverter";
+import PasswordGenerator from "./components/PasswordGenerator";
+import JsonFormatter from "./components/JsonFormatter";
+import QrCodeGenerator from "./components/QrCodeGenerator";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -68,6 +71,12 @@ export default function Page() {
       <TicTacToe />
 
       <ColorConverter />
+
+      <PasswordGenerator />
+
+      <JsonFormatter />
+
+      <QrCodeGenerator />
     </main>
   );
 }
